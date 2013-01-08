@@ -1,7 +1,5 @@
 <?php
 require_once __DIR__ . '/../src/kcmerrill/utility/checkpoints.php';
-require_once __DIR__ . '/../../phpwebunit/src/kcmerrill/tdd/phpwebunit.php';
-new kcmerrill\tdd\phpwebunit;
 
 class checkpointTest extends PHPUnit_Framework_TestCase
 {
