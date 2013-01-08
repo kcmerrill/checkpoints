@@ -60,12 +60,11 @@ class checkpointTest extends PHPUnit_Framework_TestCase
         $this->assertEquals('Welcome to Step 2!', file_get_contents($checkpoints->getFullFilePath('step_two')));
         $this->assertEquals('Welcome to Step 3!', file_get_contents($checkpoints->getFullFilePath('step_three')));
         $this->assertEquals('Welcome to Step 4!', file_get_contents($checkpoints->getFullFilePath('step_four')));
-        
-        
+
         $checkpoints->step_one(function(){
             echo 'This should not be executed, because step_one has already run!';
         });
-        
-        $this->assertEquals('Welcome to Step 1!', file_get_contents($checkpoints->getFullFilePath('step_one')));        
+
+        $this->assertEquals('Welcome to Step 1!', file_get_contents($checkpoints->getFullFilePath('step_one')));
     }
 }
