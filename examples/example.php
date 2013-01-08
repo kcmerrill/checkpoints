@@ -31,5 +31,5 @@ $checkpoints->step_four(function() {
 
 
 /* Now, run this again, and you'll notice nothing will execute because the checkpoints exist.
- * Then, go and delete one of the checkpoints, and run it again ...
+ * Then, go and delete one of the checkpoints, and run it again ..
 */
